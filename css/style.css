@@ -1,0 +1,135 @@
+/* common */
+body{
+    font-family: 'Pretendard';
+}
+.d-flex{
+    display: flex;
+}
+
+/* layout */
+.title a{
+    text-decoration: none;
+}
+
+.title{
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 251, 144, 0.8);
+    border-style: solid;
+    border-width: 3px;
+    border-color: skyblue;
+    border-radius: 1em;
+    position: fixed;
+    top: 0.5rem;
+    right:0.5rem;
+    left:0.5rem;
+    padding: 1rem 2rem;
+}
+
+.title h1 a{
+    color: rgb(72, 149, 208);
+    font-weight: 600;
+}
+
+.title h1 a:hover{
+    color: rgb(224, 177, 224)
+}
+
+.list li{
+    padding-left: 1rem;
+}
+
+.list li a{
+    color: rgb(72, 149, 208);
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.list li:nth-child(1):hover a{
+    color: rgb(240, 189, 94);
+}
+
+.list li:nth-child(2):hover a{
+    color: rgb(137, 226, 189);
+}
+
+.list li:nth-child(3):hover a{
+    color: rgb(187, 155, 223);
+}
+
+.list li:after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0px;
+    transition: 0.3s;
+}
+
+.list li:nth-child(1)::after{
+    background-color: rgb(240, 189, 94);
+}
+
+.list li:nth-child(2)::after{
+    background-color: rgb(137, 226, 189);
+}
+
+.list li:nth-child(3)::after{
+    background-color: rgb(187, 155, 223);
+}
+
+.list li:hover::after{
+    width: 100%;
+}
+
+.section {
+    background-color: rgba(215, 237, 247, 0.8);
+}
+
+.section a{
+    text-decoration: none;
+    color: rgb(54, 117, 165);
+}
+
+.child1 a:hover{
+    color: rgb(240, 189, 94);
+}
+
+.child2 a:hover{
+    color: rgb(137, 226, 189);
+}
+
+.child3 a:hover{
+    color: rgb(187, 155, 223);
+}
+
+
+.section a::after{
+    content: "";
+    display: block;
+    height: 2px;
+    width: 0;
+    transition: 0.3s;
+}
+
+.section a:nth-child(1)::after{
+    background-color: rgb(240, 189, 94);
+}
+
+.section a:nth-child(2)::after{
+    background-color: rgb(137, 226, 189);
+}
+
+.section a:nth-child(3)::after{
+    background-color: rgb(187, 155, 223);
+}
+
+.section a:hover::after{
+    width: 100%;
+}
+
+.child1, .child2, .child3 {
+    height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+}
