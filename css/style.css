@@ -30,6 +30,7 @@ body{
 .title h1 a{
     color: rgb(72, 149, 208);
     font-weight: 600;
+    font-size: 2rem;
 }
 
 .title h1 a:hover{
@@ -42,6 +43,7 @@ body{
 
 .list li a{
     color: rgb(72, 149, 208);
+    font-size: 0.8rem;
     font-weight: 400;
     transition: 0.3s;
 }
@@ -89,6 +91,14 @@ body{
 .section a{
     text-decoration: none;
     color: rgb(54, 117, 165);
+    font-size: 1.5rem;
+}
+
+.child1, .child2, .child3 {
+    height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .child1 a:hover{
@@ -128,8 +138,31 @@ body{
     width: 100%;
 }
 
-.child1, .child2, .child3 {
-    height: calc(100vh - 80px);
+.footer{
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 1em;
+}
+
+.footer a{
+    color: white;
+}
+
+.footer li{
+    border-radius: 3px;
+    padding: 3px;
+    margin: 0.5rem;
+}
+
+.footer li:nth-child(1) {
+    background-color: rgb(224, 94, 221);
+}
+
+.footer li:nth-child(2) {
+    background-color: rgb(18, 37, 156);
+}
+
+.footer li:nth-child(3) {
+    background-color: rgb(217, 24, 24);
 }
